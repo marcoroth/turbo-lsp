@@ -1,0 +1,76 @@
+{
+  "name": "turbo-lsp",
+  "displayName": "Turbo LSP",
+  "description": "Intelligent Turbo tooling",
+  "license": "MIT",
+  "pricing": "Free",
+  "version": "0.0.1",
+  "icon": "icon.png",
+  "publisher": "marcoroth",
+  "author": {
+    "name": "Marco Roth"
+  },
+  "categories": [
+    "Programming Languages",
+    "Language Packs",
+    "Linters"
+  ],
+  "keywords": [
+    "Turbo",
+    "Hotwire",
+    "Ruby on Rails"
+  ],
+  "sponsor": {
+    "url": "http://github.com/sponsors/marcoroth"
+  },
+  "repository": "https://github.com/marcoroth/turbo-lsp",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "activationEvents": [
+    "onLanguage:ruby",
+    "onLanguage:erb",
+    "onLanguage:blade",
+    "onLanguage:php",
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onView:controllerDefinitions"
+  ],
+  "main": "./client/out/extension",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Turbo configuration",
+      "properties": {
+        "languageServerTurbo.trace.server": {
+          "scope": "window",
+          "type": "string",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "default": "verbose",
+          "description": "Traces the communication between VS Code and the language server."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run build",
+    "prebuild": "yarn run clean",
+    "clean": "yarn rimraf client/out && yarn rimraf server/out",
+    "deploy": "vsce publish --yarn",
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "postinstall": "cd client && yarn install && cd ../server && yarn install && cd ..",
+    "test": "sh ./scripts/e2e.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vscode/vsce": "^2.22.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
+}

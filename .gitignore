@@ -1,0 +1,11 @@
+client/out/
+server/out/
+node_modules/
+
+.vscode-test/
+
+*.vsix
+*.tgz
+*~
+
+.DS_Store

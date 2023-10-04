@@ -1,0 +1,36 @@
+{
+  "name": "turbo-language-server",
+  "description": "Intelligent Turbo tooling",
+  "version": "0.0.1",
+  "author": "Marco Roth",
+  "license": "MIT",
+  "engines": {
+    "node": "*"
+  },
+  "bugs": "https://github.com/marcoroth/turbo-lsp/issues",
+  "repository": "https://github.com/marcoroth/turbo-lsp",
+  "homepage": "https://hotwire.io/ecosystem/tooling/turbo-lsp",
+  "bin": {
+    "turbo-language-server": "./out/turbo-language-server"
+  },
+  "scripts": {
+    "clean": "rimraf out",
+    "prebuild": "yarn run clean",
+    "build": "tsc -b",
+    "postbuild": "node scripts/executable.mjs",
+    "watch": "tsc -b -w"
+  },
+  "files": [
+    "out"
+  ],
+  "dependencies": {
+    "vscode-html-languageservice": "^5.1.1",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.1"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "source-map": "^0.7.4",
+    "typescript": "^5.4.5"
+  }
+}
