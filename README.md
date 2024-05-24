@@ -6,7 +6,8 @@ Intelligent Turbo tooling for Visual Studio Code
 
 ## Functionality
 
-Currently, this Language Server only works for HTML, though its utility extends to various file types such as ERB, PHP, or Blade files.
+> [!IMPORTANT]
+> This Language Server Protocol (LSP) implementation is currently in a preliminary stage of development and does not yet include support for Ruby-related functionalities.
 
 ### Completions
 
