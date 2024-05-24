@@ -1,7 +1,7 @@
 {
   "name": "turbo-language-server",
   "description": "Intelligent Turbo tooling",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Marco Roth",
   "license": "MIT",
   "engines": {
