@@ -102,7 +102,7 @@ connection.onCodeAction((params) => service.codeActions.onCodeAction(params))
 connection.onExecuteCommand((params) => {
   if (!params.arguments) return
 
-  if (params.command === "stimulus.config.create") {
+  if (params.command === "turbo.config.create") {
     const [_identifier, _diagnostic] = params.arguments as [string, Diagnostic]
 
     service.commands.createTurboLSPConfig()
