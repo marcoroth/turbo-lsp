@@ -1,7 +1,4 @@
-export type TurboConfigOptions = {
-  ignoredControllerIdentifiers: Array<string>
-  ignoredAttributes: Array<string>
-}
+export type TurboConfigOptions = {}
 
 export type TurboLSPConfig = {
   version: string
@@ -39,28 +36,6 @@ export class Config {
 
   get options(): TurboConfigOptions {
     return this.config.options
-  }
-
-  get ignoredControllerIdentifiers(): Array<string> {
-    return this.options.ignoredControllerIdentifiers
-  }
-
-  get ignoredAttributes(): Array<string> {
-    return this.options.ignoredAttributes
-  }
-
-  public addIgnoredController(identifier: string) {
-    const identifiers = this.ignoredControllerIdentifiers
-    identifiers.push(identifier)
-
-    this.options.ignoredControllerIdentifiers = Array.from(new Set(identifiers)).sort()
-  }
-
-  public addIgnoredAttribute(attribute: string) {
-    const attributes = this.ignoredAttributes
-    attributes.push(attribute)
-
-    this.options.ignoredAttributes = Array.from(new Set(attributes)).sort()
   }
 
   public toJSON() {
@@ -120,10 +95,7 @@ export class Config {
       version,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
-      options: {
-        ignoredControllerIdentifiers: [],
-        ignoredAttributes: []
-      }
+      options: {}
     })
   }
 }
