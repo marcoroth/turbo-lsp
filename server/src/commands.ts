@@ -24,7 +24,7 @@ export class Commands {
 
     await this.connection.workspace.applyEdit({ documentChanges: [textDocumentEdit] })
     await this.connection.window.showDocument({
-      uri: textDocumentEdit.textDocument.uri,
+      uri: `file://${textDocumentEdit.textDocument.uri}`,
       external: false,
       takeFocus: true,
     })
