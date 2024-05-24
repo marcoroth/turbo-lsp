@@ -12,7 +12,14 @@ Intelligent Turbo tooling for Visual Studio Code
 ### Completions
 
 * Completions for Turbo HTML Custom Elements
+
+    ![CleanShot 2024-05-24 at 13 32 11](https://github.com/marcoroth/turbo-lsp/assets/6411752/762a2b53-72a1-4e82-ad9c-41f39a9afb50)
+
+
 * Completions for Turbo HTML Custom Element Attributes
+
+    ![CleanShot 2024-05-24 at 13 32 30](https://github.com/marcoroth/turbo-lsp/assets/6411752/adee6233-6f5a-4fe6-aaf2-48381ed3ae16)
+
 
 ## Structure
 
