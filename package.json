@@ -34,8 +34,7 @@
     "onLanguage:php",
     "onLanguage:html",
     "onLanguage:javascript",
-    "onLanguage:typescript",
-    "onView:controllerDefinitions"
+    "onLanguage:typescript"
   ],
   "main": "./client/out/extension",
   "contributes": {

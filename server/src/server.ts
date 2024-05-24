@@ -24,7 +24,6 @@ connection.onInitialize(async (params: InitializeParams) => {
       textDocumentSync: TextDocumentSyncKind.Incremental,
       completionProvider: { resolveProvider: true },
       codeActionProvider: true,
-      definitionProvider: true,
       executeCommandProvider: {
         commands: [
           "turbo.config.create"
