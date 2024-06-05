@@ -68,7 +68,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.1",
-    "@vscode/vsce": "^2.22.0",
+    "@vscode/vsce": "^2.27.0",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.5"
   }
