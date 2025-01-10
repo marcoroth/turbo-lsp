@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@types/vscode": "^1.96.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   }
 }
