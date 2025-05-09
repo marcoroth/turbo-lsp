@@ -18,7 +18,7 @@
     "vscode-languageclient": "^9.0.1"
   },
   "devDependencies": {
-    "@types/vscode": "^1.98.0",
+    "@types/vscode": "^1.100.0",
     "typescript": "^5.8.2"
   }
 }
