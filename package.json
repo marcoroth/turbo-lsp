@@ -67,7 +67,7 @@
     "test": "sh ./scripts/e2e.sh"
   },
   "devDependencies": {
-    "@types/node": "^22.15.30",
+    "@types/node": "^25.0.2",
     "@vscode/vsce": "^3.7.1",
     "rimraf": "^6.1.2",
     "typescript": "^5.9.3"
