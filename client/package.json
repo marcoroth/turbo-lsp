@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "brace-expansion": "^5.0.2",
-    "minimatch": "^10.1.2",
+    "minimatch": "^10.2.1",
     "vscode-languageclient": "^9.0.1"
   },
   "devDependencies": {
