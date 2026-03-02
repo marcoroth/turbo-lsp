@@ -31,10 +31,10 @@ brace-expansion@^2.0.1:
   dependencies:
     balanced-match "^1.0.0"
 
-brace-expansion@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-5.0.2.tgz#b6c16d0791087af6c2bc463f52a8142046c06b6f"
-  integrity sha512-Pdk8c9poy+YhOgVWw1JNN22/HcivgKWwpxKq04M/jTmHyCZn12WPJebZxdjSa5TmBqISrUSgNYU3eRORljfCCw==
+brace-expansion@^5.0.2, brace-expansion@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-5.0.4.tgz#614daaecd0a688f660bbbc909a8748c3d80d4336"
+  integrity sha512-h+DEnpVvxmfVefa4jFbCf5HdH5YMDXRsmKflpf1pILZWRFlTbJpxeU55nJl4Smt5HQaGzg1o6RHFPJaOqnmBDg==
   dependencies:
     balanced-match "^4.0.2"
 
